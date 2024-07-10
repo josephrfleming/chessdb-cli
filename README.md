@@ -1,6 +1,6 @@
 # ChessDB CLI
 
-ChessDB is a command-line application that simulates a chess game database. It supports entering games and viewing existing games.
+ChessDB is a command-line application that simulates a chess game database. It supports entering new games and viewing existing games.
 
 ## How to Use
 
