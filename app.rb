@@ -16,6 +16,7 @@ loop do
   choice = gets.chomp.to_i
   puts ""
 
+  # For entering a new game
   if choice == 1
     game = Database.new
     game.player_names 
@@ -26,6 +27,7 @@ loop do
     games << game
     puts "\nGame successfully added.\n"
 
+  # For viewing an existing game
   elsif choice == 2
     if games.empty?
       puts "No games exist in database yet."
@@ -50,7 +52,7 @@ loop do
       end
     end
     puts ""
-
+  # Close the App
   elsif choice == 3
     puts "Closing..."
     break
