@@ -30,9 +30,12 @@ jobs:
           bundler-cache: true
       - name: Set up database schema
         run: bin/rails db:schema:load
-      # This runs the tests in the spec/ folder
+      # Run RSpec tests
       - name: Run rspec tests
         run: bundle exec rspec
+      # Run Rake Grade Task
+      - name: Run rake grade
+        run: bundle exec rake grade
 
   lint:
     runs-on: ubuntu-latest
